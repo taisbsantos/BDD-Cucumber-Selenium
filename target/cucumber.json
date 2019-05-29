@@ -1,0 +1,322 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14764204631,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.before()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Successful search",
+        "description": "",
+        "id": "search-wikipedia;successful-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 970453079,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 643551704,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter search term \u0027Java\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 19
+                }
+              ],
+              "location": "WikipediaSearchSteps.searchFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3228716160,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Do search",
+            "match": {
+              "location": "WikipediaSearchSteps.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 251751454,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Different content is shown for the user",
+            "match": {
+              "location": "WikipediaSearchSteps.assertSingleResult()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4575824622,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.before()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Successful search",
+        "description": "",
+        "id": "search-wikipedia;successful-search;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 452821405,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 102043635,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter search term \u0027Brasil\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brasil",
+                  "offset": 19
+                }
+              ],
+              "location": "WikipediaSearchSteps.searchFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11091648160,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Do search",
+            "match": {
+              "location": "WikipediaSearchSteps.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47257722,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Different content is shown for the user",
+            "match": {
+              "location": "WikipediaSearchSteps.assertSingleResult()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7582999735,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.before()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Incorrect search with invalid term",
+        "description": "",
+        "id": "search-wikipedia;incorrect-search-with-invalid-term;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 123140432,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 173059421,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter search term \u0027Javaaa\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Javaaa",
+                  "offset": 19
+                }
+              ],
+              "location": "WikipediaSearchSteps.searchFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2810833672,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Do search",
+            "match": {
+              "location": "WikipediaSearchSteps.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1628932534,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"toc\"}\n  (Session info: headless chrome\u003d74.0.3729.169)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dLinux 4.18.0-20-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027tais\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.18.0-20-generic\u0027, java.version: \u002711.0.3\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /tmp/.com.google.Chrome.AwWiIY}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41981}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}\nSession ID: 2486700839a7bf717db8958876fa4ca4\n*** Element info: {Using\u003did, value\u003dtoc}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat utils.WebDriverUtils.verifyElementAbsent(WebDriverUtils.java:9)\n\tat steps.WikipediaSearchSteps.assertInvalidSearch(WikipediaSearchSteps.java:54)\n\tat ✽.Then No results should be shown(WikipediaSearch.feature:19)\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "No results should be shown",
+            "match": {
+              "location": "WikipediaSearchSteps.assertInvalidSearch()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12454144576,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.before()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Incorrect search with invalid term",
+        "description": "",
+        "id": "search-wikipedia;incorrect-search-with-invalid-term;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 134902330,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSearchSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 192555983,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter search term \u0027Brasilll\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brasilll",
+                  "offset": 19
+                }
+              ],
+              "location": "WikipediaSearchSteps.searchFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4664776788,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Do search",
+            "match": {
+              "location": "WikipediaSearchSteps.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111046325,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"toc\"}\n  (Session info: headless chrome\u003d74.0.3729.169)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dLinux 4.18.0-20-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027tais\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.18.0-20-generic\u0027, java.version: \u002711.0.3\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /tmp/.com.google.Chrome.QFjYLR}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:34691}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}\nSession ID: ac63ffc5e838b5d7f3753a702c56436e\n*** Element info: {Using\u003did, value\u003dtoc}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat utils.WebDriverUtils.verifyElementAbsent(WebDriverUtils.java:9)\n\tat steps.WikipediaSearchSteps.assertInvalidSearch(WikipediaSearchSteps.java:54)\n\tat ✽.Then No results should be shown(WikipediaSearch.feature:19)\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "No results should be shown",
+            "match": {
+              "location": "WikipediaSearchSteps.assertInvalidSearch()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "search Wikipedia",
+    "description": "As a user\nI would like to search for a term\nIn order to learn about it\u0027s meaning",
+    "id": "search-wikipedia",
+    "keyword": "Feature",
+    "uri": "WikipediaSearch.feature"
+  }
+]
